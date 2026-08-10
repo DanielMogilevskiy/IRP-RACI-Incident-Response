@@ -1,0 +1,11 @@
+control_id,control_name,framework,control_type,description,owner,frequency,evidence,related_incident_phase,status
+CTRL-001,Incident Response Plan,ISO 27001,Preventive,Maintain a documented incident response framework,Information Security,Annual,Approved IRP,Preparation,Active
+CTRL-002,Incident Classification,ISO 27001,Detective,Classify incidents according to business and security impact,Security Operations,Per Incident,Incident Record,Triage,Active
+CTRL-003,Incident Escalation,ISO 27001,Corrective,Escalate incidents based on severity and predefined triggers,Incident Commander,Per Incident,Escalation Record,Escalation,Active
+CTRL-004,Incident Communication,ISO 27001,Corrective,Coordinate internal and external incident communications,Incident Commander,Per Incident,Communication Record,Response,Active
+CTRL-005,Evidence Preservation,ISO 27001,Detective,Preserve relevant evidence during security investigations,Security Operations,Per Incident,Investigation Evidence,Investigation,Active
+CTRL-006,Post Incident Review,ISO 27001,Corrective,Perform lessons learned and corrective action tracking,Incident Commander,Per Significant Incident,PIR Record,Closure,Active
+CTRL-007,Access Review,ISO 27001,Preventive,Review privileged and sensitive access following relevant incidents,IT Operations,Quarterly,Access Review Report,Eradication,Active
+CTRL-008,Regulatory Assessment,GDPR,Detective,Assess potential privacy and regulatory notification requirements,Privacy Officer,Per Data Incident,Privacy Assessment,Investigation,Active
+CTRL-009,Third Party Incident Management,ISO 27001,Corrective,Manage security incidents involving suppliers and service providers,Vendor Manager,Per Incident,Vendor Incident Record,Response,Active
+CTRL-010,Incident Metrics,ISO 27001,Detective,Monitor incident response performance and trends,Information Security,Monthly,Incident KPI Report,Monitoring,Active

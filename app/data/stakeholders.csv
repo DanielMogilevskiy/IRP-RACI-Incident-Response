@@ -1,0 +1,11 @@
+stakeholder_id,name,role,department,responsibility,contact_type,notification_level,active
+STK-001,Security Analyst,Security Analyst,Information Security,Detection and initial triage,Internal,All,Yes
+STK-002,Incident Commander,Incident Commander,Information Security,Incident coordination and decision making,Internal,P1-P2,Yes
+STK-003,CISO,Chief Information Security Officer,Information Security,Security accountability and executive escalation,Internal,P1-P2,Yes
+STK-004,IT Operations Lead,IT Operations Lead,IT Operations,Infrastructure containment and recovery,Internal,P1-P3,Yes
+STK-005,Privacy Officer,Privacy Officer,Legal and Privacy,Privacy impact and regulatory assessment,Internal,Data Breach,Yes
+STK-006,Legal Counsel,Legal Counsel,Legal,Legal assessment and external communication,Internal,P1-P2,Yes
+STK-007,HR Business Partner,HR Business Partner,Human Resources,Employee-related incidents,Internal,HR Related,Yes
+STK-008,Executive Management,Executive Management,Executive,Strategic business decisions,Internal,P1,Yes
+STK-009,Communications Lead,Communications Lead,Corporate Communications,External and internal communications,Internal,P1-P2,Yes
+STK-010,Vendor Manager,Vendor Manager,Procurement,Third-party coordination,Internal,Third Party,Yes
