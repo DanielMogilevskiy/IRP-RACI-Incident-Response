@@ -1,54 +1,19 @@
 # 🛡️ Incident Response & GRC Management Platform
 
-> **Portfolio Project 5 — Incident Response Plan (IRP) + RACI**
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-dashboard-red)
+![Tests](https://img.shields.io/badge/Tests-Pytest-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-A portfolio-grade **Governance, Risk & Compliance (GRC)** application for managing information security incidents through a structured, risk-based incident response lifecycle.
+**Governance, Risk & Compliance (GRC)** application for managing information security incidents through a structured, risk-based incident response lifecycle.
 
 Built with **Python, Streamlit and Pandas**, the platform combines incident management, severity assessment, escalation governance, RACI responsibilities, regulatory considerations, post-incident review, and GRC control mapping into a single application.
-
----
-
-## 🚀 Live Demo
-
-**Streamlit:** `COMING SOON`
-
-**GitHub:** `YOUR_GITHUB_REPOSITORY_URL`
 
 ---
 
 ## 🎯 Project Objective
 
 The objective of this project is to demonstrate how an organization can establish a structured and auditable Incident Response capability.
-
-The platform translates an Incident Response Plan into a practical GRC workflow:
-
-```text
-Incident Detection
-        ↓
-Initial Triage
-        ↓
-Risk Assessment
-        ↓
-Severity Classification
-        ↓
-Priority / SLA
-        ↓
-Escalation
-        ↓
-Containment
-        ↓
-Eradication
-        ↓
-Recovery
-        ↓
-Closure
-        ↓
-Post-Incident Review
-        ↓
-Corrective Actions
-        ↓
-Control Improvement
-```
 
 ---
 
@@ -236,44 +201,6 @@ Example controls:
 
 ---
 
-# 📊 Dashboard
-
-The Streamlit interface provides operational visibility into:
-
-* Total incidents
-* Severity distribution
-* Priority distribution
-* Incident categories
-* Incident lifecycle status
-* Recent incidents
-* Incident trends
-
-The dashboard is designed for both **operational monitoring and management reporting**.
-
----
-
-# 📝 Post-Incident Review
-
-Significant incidents can be reviewed using a structured PIR process.
-
-The review covers:
-
-* Root cause
-* Detection effectiveness
-* Response effectiveness
-* Containment
-* Eradication
-* Recovery
-* RACI effectiveness
-* Escalation effectiveness
-* Regulatory assessment
-* Lessons learned
-* Corrective actions
-* Control improvements
-* Residual risk
-
----
-
 # 🧪 Testing
 
 The project includes automated tests covering core incident-management logic.
@@ -303,50 +230,6 @@ Expected result:
 
 ---
 
-# 🏗️ Project Structure
-
-```text
-Incident-Response/
-│
-├── app/
-│   ├── __init__.py
-│   ├── app.py
-│   │
-│   ├── data/
-│   │   ├── incidents.csv
-│   │   ├── stakeholders.csv
-│   │   └── controls.csv
-│   │
-│   └── utils/
-│       ├── __init__.py
-│       ├── incident.py
-│       ├── reporting.py
-│       └── risk.py
-│
-├── docs/
-│   ├── IRP.md
-│   ├── RACI.md
-│   ├── SEVERITY_MATRIX.md
-│   ├── ESCALATION_MATRIX.md
-│   ├── INCIDENT_LIFECYCLE.md
-│   └── POST_INCIDENT_REVIEW.md
-│
-├── templates/
-│   ├── Incident_Communication.md
-│   ├── Incident_Report.md
-│   └── Post_Incident_Review.md
-│
-├── tests/
-│   └── test_incident.py
-│
-├── .gitignore
-├── LICENSE
-├── README.md
-└── requirements.txt
-```
-
----
-
 # ⚙️ Technology Stack
 
 | Technology | Purpose                  |
@@ -366,7 +249,7 @@ Incident-Response/
 ## 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/DanielMogilevskiy/IRP-RACI-Incident-Response.git
 ```
 
 ```bash
@@ -404,63 +287,99 @@ python -m pytest
 ```bash
 streamlit run app/app.py
 ```
-
-The application will be available locally at:
-
-```text
-http://localhost:8501
-```
-
 ---
 
 # 🔎 Example Incident Scenarios
 
-The application can be used to model scenarios such as:
+The platform can be used to model common security incident scenarios and demonstrate the corresponding GRC response workflow.
 
-### Ransomware
+### 🔴 Ransomware
+
+**Example workflow:**
 
 ```text
-Critical
-→ P1
-→ Immediate response
-→ CISO escalation
-→ Executive notification
-→ Legal / Privacy assessment
+Incident Detection
+→ Critical Severity
+→ P1 Priority
+→ Immediate Response
+→ Incident Commander
+→ CISO Escalation
+→ Executive Notification
+→ Legal / Privacy Assessment
+→ Containment
+→ Eradication
+→ Recovery
+→ Post-Incident Review
 ```
 
-### Privileged Account Compromise
+**GRC focus:** incident governance, escalation, business impact, regulatory assessment and corrective actions.
+
+---
+
+### 🔐 Privileged Account Compromise
+
+**Example workflow:**
 
 ```text
-High / Critical
-→ P1/P2
+Detection
+→ High / Critical Severity
+→ P1 / P2 Priority
 → Incident Commander
 → IT Operations
-→ CISO
-→ Access review
-→ Evidence preservation
+→ CISO Escalation
+→ Account Containment
+→ Evidence Preservation
+→ Access Review
+→ Recovery
+→ Lessons Learned
 ```
 
-### Phishing
+**GRC focus:** privileged access, accountability, evidence preservation and control improvement.
+
+---
+
+### 🎣 Phishing Incident
+
+**Example workflow:**
 
 ```text
-Low / Medium / High
-→ Risk-based classification
+Detection
+→ Risk Assessment
+→ Severity Classification
 → Investigation
-→ Credential reset
+→ Credential Reset
 → Monitoring
-→ Lessons learned
+→ User Impact Assessment
+→ Closure
+→ Lessons Learned
 ```
 
-### Data Exposure
+**GRC focus:** risk-based classification, access management, awareness and corrective actions.
+
+---
+
+### 🔒 Potential Data Exposure
+
+**Example workflow:**
 
 ```text
-Potential breach
-→ Impact assessment
-→ Privacy assessment
-→ Legal review
-→ Regulatory consideration
-→ Corrective actions
+Detection
+→ Impact Assessment
+→ Data Exposure Assessment
+→ Privacy Assessment
+→ Legal Review
+→ Regulatory Consideration
+→ Containment
+→ Corrective Actions
+→ Post-Incident Review
 ```
+
+**GRC focus:** privacy governance, regulatory assessment, documentation and accountability.
+
+---
+
+> **Note:** These scenarios represent example workflows that can be modeled using the Incident Response governance framework. External notifications, SIEM/EDR integrations, automated email alerts and regulatory submissions are outside the scope of this portfolio implementation.
+
 
 ---
 
@@ -481,105 +400,54 @@ Templates are available in `/templates`.
 
 ---
 
-# 🛡️ Security Considerations
+## 🌐 Web Interface (Streamlit)
 
-This application is designed as a **portfolio and educational GRC project**.
+**Try it live:** 👉 [Launch GRC Risk Heatmap Generator](https://danielmogilevskiy-irp-raci-incident-response.streamlit.app/)
 
-It does not connect to production SIEM, EDR, ticketing, identity, or cloud infrastructure.
+In addition to the command-line tool, this project includes an **interactive web interface** built with [Streamlit](https://streamlit.io).  
+It provides a more user-friendly way to generate risk heatmaps with visual feedback and real-time customisation.
 
-No real personal, confidential, or production security data should be entered into the demo environment.
+### Features
 
-For production use, the application would require additional controls including:
+- 📂 **Upload CSV** — drag & drop or browse for your risk data
+- 🎨 **Colour palette selection** — choose from multiple schemes (Reds, Blues, Greens, etc.)
+- 🔥 **Real-time heatmap** — instantly see your data visualised
+- 💾 **Download results** — save the heatmap as a high-resolution PNG
+- 🖥️ **Clean, intuitive UI** — perfect for non-technical stakeholders
 
-* Authentication
-* Authorization / RBAC
-* Secure database storage
-* Encryption
-* Audit logging
-* Secrets management
-* Backup and recovery
-* Input sanitization
-* Secure deployment configuration
-* Monitoring
-* Formal change management
+### How to Run Locally
 
----
+Make sure you're in the project root and your virtual environment is activated:
 
-# 🔮 Future Improvements
+```bash
+streamlit run app.py
+```
+Your browser will open automatically at http://localhost:8501.
 
-Potential future enhancements include:
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://danielmogilevskiy-irp-raci-incident-response.streamlit.app/)
 
-* PostgreSQL database
-* Role-Based Access Control
-* Authentication
-* Immutable audit trail
-* SIEM integration
-* EDR integration
-* Email / Teams / Slack notifications
-* Automated evidence collection
-* SLA breach alerts
-* Corrective Action Register
-* Risk Register integration
-* Vendor incident workflow
-* Business Impact Analysis integration
-* API layer
-* Automated compliance reporting
-* ISO 27001 control mapping
-* GDPR breach workflow automation
+![Streamlit Report](screenshots/IncidentResponseReview.png)
 
 ---
 
-# 🎓 Portfolio Skills Demonstrated
+## 🤝 Contributing
 
-This project demonstrates practical knowledge of:
+Contributions, suggestions and improvements are welcome.
 
-* Governance, Risk & Compliance
-* Incident Response Governance
-* Risk Assessment
-* Incident Classification
-* Severity Modeling
-* Escalation Management
-* RACI
-* Security Governance
-* Regulatory Assessment
-* GDPR considerations
-* ISO 27001 concepts
-* Control Management
-* Evidence Management
-* Post-Incident Review
-* Corrective Action Management
-* KPI / Dashboard Design
-* Python
-* Streamlit
-* Data Management
-* Automated Testing
-* Git / GitHub
-* Technical Documentation
+Please open an issue or submit a pull request for proposed changes.
 
 ---
 
-# ⚠️ Disclaimer
+## 📄 License
 
-This project is an independent portfolio project created for educational and demonstration purposes.
+This project is licensed under the **MIT License**.
 
-It is not an official ISO/IEC 27001 implementation, certification, legal opinion, or substitute for professional incident response or regulatory advice.
-
----
-
-## Author
-
-**Cybersecurity / GRC Portfolio**
-
-Built as part of a structured cybersecurity GRC portfolio covering:
-
-1. ISO 27001 Checklist & Automation
-2. Risk Heatmap
-3. Asset Register
-4. GDPR Data Mapping
-5. **Incident Response Plan + RACI**
-6. Vendor Risk Assessment
-7. BIA + RTO/RPO
+See the `LICENSE` file for the full license text.
 
 ---
 
-⭐ If this project is useful for learning GRC, feel free to explore the repository and documentation.
+## 👤 Author
+
+Maintained as part of a practical Cybersecurity GRC portfolio.
+
+Maintained by [Daniel Mogilevskiy](https://www.linkedin.com/in/daniel-mogilevskiy/)

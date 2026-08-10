@@ -4,6 +4,7 @@ import plotly.express as px
 from datetime import datetime
 
 from utils.risk import calculate_severity
+
 from utils.reporting import (
     add_incident,
     delete_incident,
