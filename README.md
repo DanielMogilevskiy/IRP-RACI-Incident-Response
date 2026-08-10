@@ -402,7 +402,7 @@ Templates are available in `/templates`.
 
 ## 🌐 Web Interface (Streamlit)
 
-**Try it live:** 👉 [Launch GRC Risk Heatmap Generator](https://danielmogilevskiy-irp-raci-incident-response.streamlit.app/)
+**Try it live:** 👉 [Launch IRP+RACI Incident Response](https://danielmogilevskiy-irp-raci-incident-response.streamlit.app/)
 
 In addition to the command-line tool, this project includes an **interactive web interface** built with [Streamlit](https://streamlit.io).  
 It provides a more user-friendly way to generate risk heatmaps with visual feedback and real-time customisation.
